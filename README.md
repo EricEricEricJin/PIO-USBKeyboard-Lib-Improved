@@ -1,6 +1,5 @@
 # PIO-USBKeyboard-Lib-Improved
-An improvement to Platformio USBKeyboard Lib that make long-press and release available.
-
-Substitude these two files under direction `.platformio\packages\framework-arduino-mbed\libraries\USBHID`.
-
-Added functions: `key_code_press`, `key_code_release`, `media_control_press`, `media_control_release`.
+An improvement to Platformio mbed USBKeyboard Lib that can achieve:
+1. Long press
+2. Press down All (or part of) modifier keys at same time
+3. Press at most 6 normal keys at same time. If more than 6 pressed down, would send 'full' report. 
